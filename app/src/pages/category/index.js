@@ -8,10 +8,6 @@ import { useSelector } from 'react-redux'
 const { Content } = Layout
 export default function Category() {
     const data = useSelector((state) => state.category)
-
-    const [params, setParams] = useState({
-        listName:'',
-    })
     return (
         <Layout>
             <Content>

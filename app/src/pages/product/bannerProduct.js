@@ -1,7 +1,14 @@
+import { useState } from 'react'
 import { ExportOutlined, FileAddOutlined } from '@ant-design/icons'
 import { Button, Col, Row, Typography } from 'antd'
+import ModalAddProduct from './modalAddProduct';
 
 export default function Banner() {
+    const [isModalVisible, setIsModalVisible] = useState(false);
+    const showModal = () => {
+        setIsModalVisible(true);
+    };
+
     return (
         <Row>
             <Col 
@@ -20,12 +27,19 @@ export default function Banner() {
                         <ExportOutlined />
                         Xuất danh sách
                     </Button>
-                    <Button className='banner-button__add'>
+                    <Button 
+                        className='banner-button__add'
+                        onClick={showModal}
+                    >
                         <FileAddOutlined />
                         Thêm sản phẩm
                     </Button>
                 </Col>
             </Col>
+            <ModalAddProduct 
+                isModalVisible={isModalVisible}
+                setIsModalVisible={setIsModalVisible}
+            />
         </Row>
     )
 }

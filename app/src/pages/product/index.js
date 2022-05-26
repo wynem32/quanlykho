@@ -1,4 +1,5 @@
 import { Layout } from 'antd'
+import { useSelector } from 'react-redux'
 import Banner from './bannerProduct'
 import FilterProduct from './filterProduct'
 import TableProduct from './tableProduct'
@@ -6,18 +7,14 @@ import TableProduct from './tableProduct'
 const { Content } = Layout
 
 export default function Product() {
-    const dataList = [
-        { listName: 'Quần áo', listCode: 'QA', describle: 'quần áo quanh mùa' }
-    ]
-    const dataProduct = [
-        { productName: 'Áo thun', productCode: '0000001', image: '', tags: ['Quần áo', 'Mùa hè'], status: 'đang bán' }
-    ]
+    const listData = useSelector(state => state.category)
+    const productData = useSelector(state => state.product)
     return (
         <Layout>
             <Content>
                 <Banner />
-                <FilterProduct dataList={dataList}/>
-                <TableProduct dataProduct={dataProduct} />
+                <FilterProduct dataList={listData.data}/>
+                <TableProduct dataProduct={productData.data} />
             </Content>
         </Layout>
     )

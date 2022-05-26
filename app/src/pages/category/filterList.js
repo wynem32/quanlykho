@@ -20,9 +20,6 @@ export default function FilterList() {
                     <Col className='filter-list__search' xl={5}>
                         <Form.Item label='Lọc theo thời gian'>
                             <Select placeholder='Chọn thời gian'>
-                                <Select.Option value='Hôm qua'>Hôm qua</Select.Option>
-                                <Select.Option value='Trong tuần'>Trong tuần</Select.Option>
-                                <Select.Option value='Trong tháng'>Trong tháng</Select.Option>
                                 <Select.Option>
                                     <DatePicker.RangePicker 
                                         defaultValue={[moment(new Date(), 'YYYY/MM/DD'), moment(new Date(), 'YYYY/MM/DD')]}
