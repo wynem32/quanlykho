@@ -1,0 +1,25 @@
+.wrapper {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-button__delete,
+.banner-button__add {
+    width: 160px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.filter-list {
+    display: flex;
+}
+
+.filter-list__search {
+    margin-right: 20px;
+}

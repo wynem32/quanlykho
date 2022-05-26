@@ -1,0 +1,14 @@
+.sider {
+    background-color: #fff;
+    height: 100vh;
+    width: 250px !important;
+    outline: #e0e0e0 1px solid;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+}

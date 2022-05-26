@@ -1,0 +1,16 @@
+.avatar {
+    position: relative;
+}
+
+.logout {
+    position: absolute;
+    background-color: red;
+    top: 0;
+    left: 20;
+    /* display: none; */
+    z-index: 2;
+}
+
+.avatar:hover + .logout{
+    display: block;
+}
