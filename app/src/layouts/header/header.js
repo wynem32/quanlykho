@@ -3,6 +3,7 @@ import {
     UserOutlined,
     MenuUnfoldOutlined
 } from '@ant-design/icons'
+import { Link } from 'react-router-dom'
 import './header.css'
 
 export default function Head() {
@@ -12,9 +13,9 @@ export default function Head() {
                 {
                     key: '1',
                     label: (
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+                    <Link to='/login'>
                         Đăng xuất
-                    </a>
+                    </Link>
                     ),
                 },
             ]}

@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 export default function SideBar() {
     return (
         <>
-            <Typography.Title level={2}>DStore</Typography.Title>
+            <Typography.Title level={2}>TP Comp</Typography.Title>
             <Menu 
                 mode='inline'
                 inlineCollapsed={true}
