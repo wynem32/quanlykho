@@ -19,7 +19,7 @@ export default function Statistic() {
         <Layout>
             <Content>
                 <Banner setTable={setTable}/>
-                {table == 1 ? 
+                {table === 1 ? 
                     <TableImported data={dataImported}/>
                 : <TableExported data={dataExported} />
                 }

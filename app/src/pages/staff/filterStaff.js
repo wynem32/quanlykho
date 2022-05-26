@@ -1,4 +1,4 @@
-import { Col, DatePicker, Form, Input, Row, Select } from 'antd'
+import { Col, DatePicker, Form, Input, Row, Select, Button } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
 import moment from 'moment'
 
@@ -21,6 +21,13 @@ export default function FilterStaff() {
                                     />
                                 </Select.Option>
                             </Select>
+                        </Form.Item>
+                    </Col>
+                    <Col className='filter-list__search' xl={3}>
+                        <Form.Item label=''>
+                            <Button type='primary' htmlType='submit'>
+                                Search
+                            </Button>
                         </Form.Item>
                     </Col>
                 </Form>
